@@ -1,10 +1,6 @@
 package org.example.demo.ticket.webapp.rest.resource;
 
-import org.example.demo.ticket.business.ManagerFactory;
-import org.example.demo.ticket.model.bean.projet.Projet;
-
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
+import org.example.demo.ticket.business.impl.ManagerFactory;
 
 public abstract class AbstractResource {
 
