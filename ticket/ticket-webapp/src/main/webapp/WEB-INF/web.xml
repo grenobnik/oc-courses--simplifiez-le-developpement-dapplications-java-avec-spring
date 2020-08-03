@@ -6,10 +6,6 @@
 
     <display-name>Ticket</display-name>
 
-<!--    <listener>-->
-<!--        <listener-class>org.example.demo.ticket.webapp.listener.DependencyInjectionListener</listener-class>-->
-<!--    </listener>-->
-
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
