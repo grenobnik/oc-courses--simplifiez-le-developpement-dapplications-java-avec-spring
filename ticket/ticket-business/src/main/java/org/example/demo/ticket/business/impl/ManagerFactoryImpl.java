@@ -4,28 +4,13 @@ import org.example.demo.ticket.business.contract.ManagerFactory;
 import org.example.demo.ticket.business.contract.manager.ProjetManager;
 import org.example.demo.ticket.business.contract.manager.TicketManager;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@Named("managerFactory")
 public final class ManagerFactoryImpl implements ManagerFactory {
 
-//    /** Instance unique de la classe (design pattern Singleton) */
-//    private static final ManagerFactory INSTANCE = new ManagerFactoryImpl();
-
-//    /**
-//     * Constructeur.
-//     */
-//    public ManagerFactoryImpl() {
-//        super();
-//    }
-
-//    /**
-//     * Renvoie l'instance unique de la classe (design pattern Singleton).
-//     *
-//     * @return {@link ManagerFactory}
-//     */
-//    public static ManagerFactory getInstance() {
-//        return ManagerFactoryImpl.INSTANCE;
-//    }
-
-
+    @Inject
     private ProjetManager projetManager;
 
     @Override
@@ -39,6 +24,7 @@ public final class ManagerFactoryImpl implements ManagerFactory {
     }
 
 
+    @Inject
     private TicketManager ticketManager;
 
     @Override
