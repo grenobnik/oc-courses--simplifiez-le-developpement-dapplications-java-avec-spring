@@ -1,6 +1,7 @@
 package org.example.demo.ticket.business.impl.manager;
 
 import org.example.demo.ticket.business.contract.manager.TicketManager;
+import org.example.demo.ticket.business.impl.manager.AbstractManager;
 import org.example.demo.ticket.model.bean.projet.Projet;
 import org.example.demo.ticket.model.bean.ticket.Bug;
 import org.example.demo.ticket.model.bean.ticket.Evolution;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Named
-public class TicketManagerImpl implements TicketManager {
+public class TicketManagerImpl extends AbstractManager implements TicketManager {
 
     @Override
     public Ticket getTicket(Long pNumero) throws NotFoundException {
